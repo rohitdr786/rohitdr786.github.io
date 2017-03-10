@@ -6,7 +6,7 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -15,19 +15,29 @@
             src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
             integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
             crossorigin="anonymous"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                heightStyle: "content"
+            });
+        } );
+    </script>
     <title>Portfolio</title>
 </head>
 <body>
 <div>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-text pull-right">
-                Link2
+            <div class="navbar-text pull-right header-padding-right">
+                <a href="#social" class="navbar-text">Social</a>
             </div>
             <div class="navbar-text pull-right header-padding-right">
-                Link1
+                <a href="#project" class="navbar-text">Projects</a>
             </div>
-            <div class="navbar-text col-xs-2 header-padding-right">
+            <div class="navbar-text pull-right header-padding-right">
+                <a href="#about" class="navbar-text">About</a>
+            </div>
+            <div class="navbar-text">
                 Name
             </div>
         </div>
@@ -35,33 +45,70 @@
     <div class="container-fluid col-xs-12 ">
         <div class="col-xs-1"></div>
         <div class="col-xs-10">
-            <div id="#about">
+            <div id="about">
                 <br>
-                <br>
+                <div class="text-center">
+                    <h1>Rohit Raul</h1>
+                    <h4>Computer Science Student</h4>
+                </div>
                 <div class="text-center">
                     <img class="img-circle" src="images/rohit.jpg" height="200px" width="200px">
                 </div>
                 <br>
+                <div class="text-center"><h3>About</h3></div>
                 <div class="text-justify">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publis</p>
+                    <p>Currently, I am a Master's student at Northeastern University, which is a research university located in Boston, Massachusetts. With a focus on programming and developing solutions to various computing problems, I am majoring in Computer Science.</p>
+                </div>
+                <br>
+                <div class="text-center"><h3>Experience</h3></div>
+                <div class="text-justify">
+                    <p>I have 2 years of experience working as an application developer for IBM India Pvt. Ltd. Primary responsibility included developing and maintaining website of one of the top Indian telecommunication company using backend technologies involving J2EE, SQL, WebSphere Portal and Web Content Management tool. Also got exposure working with the front end technologies like HTML, Javascript and JQuery</p>
                 </div>
             </div>
-            <hr>
-            <div id="#project">
+            <hr class="hr-color">
+            <div id="project">
                 <div class="col-xs-12 text-center">
                     <h1>Projects</h1>
+                </div>
+                <div class="col-xs-12">
+                    <div id="accordion">
+                        <h3>Section 1</h3>
+                        <div>
+                            <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                        </div>
+                        <h3>Section 2</h3>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                        </div>
+                        <h3>Section 3</h3>
+                        <div>
+                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            <ul>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-xs-1"></div>
     </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
-        Bottom header
+        <div class="navbar-text pull-left">
+            <a href="#about" class="navbar-text">About</a>
+        </div>
+        <div class="navbar-text pull-left">
+            <a href="#project" class="navbar-text">Projects</a>
+        </div>
+        <div class="navbar-text pull-left">
+            <a href="#social" class="navbar-text">Social</a>
+        </div>
     </nav>
 </div>
 </body>

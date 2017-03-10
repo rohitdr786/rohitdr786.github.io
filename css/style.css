@@ -7,7 +7,15 @@ body{
 .header-padding-right{
     padding-right: 10px;
 }
-
+.hr-color{
+    border-top-color:#a59191;
+}
+a:hover{
+    text-decoration: none;
+}
+.navbar-text {
+    float: none;
+}
 div.circle{
     /* make it responsive */
     max-width: 100%;

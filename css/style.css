@@ -43,3 +43,12 @@ div.circle{
     right: 0;
     bottom: 0;
 }
+
+.ui-state-active{
+    border-color: #868a96;
+    background-color: #b9b9b9;
+}
+
+.ui-state-focus{
+    border-color: #868a96;
+}

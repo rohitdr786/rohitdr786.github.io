@@ -2,7 +2,6 @@ body{
     background-color: whitesmoke;
     padding-top: 60px;
     padding-bottom: 60px;
-    position: absolute;
 }
 .header-padding-right{
     padding-right: 10px;
@@ -16,32 +15,9 @@ a:hover{
 .navbar-text {
     float: none;
 }
-div.circle{
-    /* make it responsive */
-    max-width: 100%;
-    width:100%;
-    height:auto;
-    display:block;
-    /* div height to be the same as width*/
-    padding-top:100%;
 
-    /* make it a circle */
-    border-radius:50%;
-
-    /* Centering on image`s center*/
-    background-position-y: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-
-    /* it makes the clue thing, takes smaller dimension to fill div */
-    background-size: cover;
-
-    /* it is optional, for making this div centered in parent*/
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.img-border{
+    border: 1px solid #868a96;
 }
 
 .ui-state-active{
@@ -52,3 +28,57 @@ div.circle{
 .ui-state-focus{
     border-color: #868a96;
 }
+
+.hello{
+    font-family: "Monotype Corsiva";
+    font-size: x-large;
+}
+
+/*flip css start*/
+.flip-pers{
+    perspective: 1000px;
+    border: 2px solid #868a96;
+}
+.flip-height{
+    backface-visibility: hidden;
+    height: 400px;
+    -webkit-transform-style:preserve-3d;;
+    transform-style: preserve-3d;
+    position:relative;
+}
+.flip-flip{
+    -webkit-transition: -webkit-transform 3s;
+    transition: transform 3s;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip-div1{
+    height: inherit;
+    background-color: white;
+    z-index: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+.flip-div2{
+    height: inherit;
+    background-color: white;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+/*flip css ends*/
+/*Card css starts*/
+.card-top{
+    position: static;
+    top: 0;
+}
+.card-bot{
+    position: fixed;
+    bottom: 0;
+}
+/*Card css ends*/

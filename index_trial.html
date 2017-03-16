@@ -63,6 +63,17 @@
             -webkit-transform: rotateY(180deg);
             transform:rotateY(180deg);
         }
+        .img1{
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .img1-fly{
+            -webkit-transition: -webkit-transform 2s;
+            transition: transform 2s;
+            -webkit-transform: translate(10%,0px);
+            transform: translate(10%,0px);
+        }
     </style>
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -146,7 +157,9 @@
     <div class="col-xs-12" style="perspective: 1000px;">
         <div class="col-xs-2"></div>
         <div id="pqr" class="col-xs-8 common" style="height: 300px;">
-            <div id="pqr1" class="col-xs-12 trial1">gfdg</div>
+            <div id="pqr1" class="col-xs-12 trial1">
+
+                gfdg<img src="images/rockets/rocket 1.png" class="img1" height="40px" width="40px" /></div>
             <div id="pqr2" class="col-xs-12 trial2 turn">asdfsd</div>
         </div>
         <div class="col-xs-2"></div>

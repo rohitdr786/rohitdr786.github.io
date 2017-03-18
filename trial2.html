@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
     <style>
         .outer-div{
             height: 300px;
-            width: 300px;
             -webkit-perspective: 1000px;
             -moz-perspective: 1000px;
             -ms-perspective: 1000px;
@@ -35,7 +37,6 @@
             -ms-backface-visibility: hidden;
             -o-backface-visibility: hidden;
             height: 300px;
-            width: 300px;
             position: absolute;
             left: 0;
             top: 0;
@@ -53,7 +54,6 @@
             -ms-backface-visibility: hidden;
             -o-backface-visibility: hidden;
             height: 300px;
-            width: 300px;
             position: absolute;
             left: 0;
             top: 0;
@@ -73,12 +73,20 @@
     </style>
 </head>
 <body>
-<div class="outer-div">
-    <div id="flipper" class="inner-div">
-        <div class="f1">asdasd</div>
-        <div class="f2">xzvxcvxz</div>
+<br><br>
+<div class="container">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+    <div class="outer-div col-xs-12">
+        <div id="flipper" class="inner-div col-xs-12">
+            <div class="f1 col-xs-12">asdasd</div>
+            <div class="f2 col-xs-12">xzvxcvxz</div>
+        </div>
+    </div>
+    </div>
+    <div class="col-xs-2">
+        <button onclick="document.getElementById('flipper').classList.toggle('flip');">Flip</button>
     </div>
 </div>
-<button onclick="document.getElementById('flipper').classList.toggle('flip');">Flip</button>
 </body>
 </html>

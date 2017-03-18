@@ -45,12 +45,17 @@ a:hover{
     /*display: block;*/
 }
 .flip-height{
-    -webkit-backface-visibility:hidden;
-    -moz-backface-visibility:hidden;
-    -ms-backface-visibility:hidden;
-    -o-backface-visibility:hidden;
-    backface-visibility:hidden;
+    /*-webkit-backface-visibility:hidden;*/
+    /*-moz-backface-visibility:hidden;*/
+    /*-ms-backface-visibility:hidden;*/
+    /*-o-backface-visibility:hidden;*/
+    /*backface-visibility:hidden;*/
     height:400px;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
     -webkit-transform-style:preserve-3d;
     -moz-transform-style:preserve-3d;
     -ms-transform-style:preserve-3d;
@@ -62,11 +67,6 @@ a:hover{
 .flip-flip{
     /*-webkit-transition: -webkit-transform 3s;*/
     /*transition: transform 3s;*/
-    -webkit-transition: 3s;
-    -moz-transition: 3s;
-    -ms-transition: 3s;
-    -o-transition: 3s;
-    transition: 3s;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
@@ -74,6 +74,11 @@ a:hover{
     transform: rotateY(180deg);
 }
 .flip-div1{
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
     height: inherit;
     background-color: white;
     /*z-index: 1;*/
@@ -87,13 +92,18 @@ a:hover{
     top:0px;
 }
 .flip-div2{
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
     height: inherit;
     background-color: white;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
     position: absolute;
     left: 0px;
     top:0px;

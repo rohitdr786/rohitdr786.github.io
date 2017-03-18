@@ -57,7 +57,7 @@ a:hover{
 .flip-div1{
     height: inherit;
     background-color: white;
-    z-index: 1;
+    /*z-index: 1;*/
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     position: absolute;

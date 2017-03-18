@@ -36,10 +36,12 @@ a:hover{
 
 /*flip css start*/
 .flip-pers{
+    -webkit-perspective: 1000px;
     perspective: 1000px;
     border: 2px solid #868a96;
 }
 .flip-height{
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     height: 400px;
     -webkit-transform-style:preserve-3d;;

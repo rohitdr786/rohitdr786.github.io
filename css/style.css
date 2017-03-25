@@ -119,3 +119,25 @@ a:hover{
     bottom: 0;
 }
 /*Card css ends*/
+
+
+/*Education Css*/
+.cups-Div {
+    /*background: url('../images/cups/cup.png') no-repeat center center fixed;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    background: url('../images/cups/cup.png');
+
+    /* Full height */
+    /*height: 100%;*/
+    max-width: 80%;
+    height: auto;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Education Css ends*/

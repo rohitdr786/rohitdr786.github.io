@@ -51,8 +51,8 @@ label{
     padding: 2em 2.5em;
 }
 .banner {
-    background: url(../images/banner.jpg) no-repeat 0px 0px;
-    background: #0086fe;
+    background: url(../images/banner/banner24.jpg) no-repeat 0px 0px;
+    /* background: #0086fe; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -361,11 +361,11 @@ li.dropdown.act a.w3_icons_act {
 .agile_banner_info h2 {
     font-size: 2.5em;
     letter-spacing: 2px;
-    color: #ecb731;
+    color: #6dced8;
 	text-shadow: 1px 1px 2px #000;
 }
 .agile_banner_info h2 span{
-    color: #171717;
+    color: #0A437A;
 }
 /*--//search bar--*/
 /*-- //Banner-Slider --*/
@@ -529,7 +529,7 @@ li.dropdown.act a.w3_icons_act {
 .work-left-agileits-w3layouts h6 {
     font-size: 17px;
     letter-spacing: 1px;
-    color: #303030;
+    color: #6dced8;
 }
 .work-left-agileits-w3layouts h6 i{
     color: #ecb731;
